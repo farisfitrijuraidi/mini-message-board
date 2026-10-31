@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <ul>
+            <% for (const message of messages) { %>
+                <%- include('messages/message', {message}); %>
+            <% } %>
+        </ul>
+    </body>
+</html>
