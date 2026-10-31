@@ -11,6 +11,10 @@ const messages = [
     },
 ];
 
-export const getIndexRouter = (req, res) => {
+export const getIndex = (req, res) => {
     res.render("index", { title: "Mini Messageboard", messages });
+};
+
+export const getForm = (req, res) => {
+    res.render("form");
 };
