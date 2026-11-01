@@ -3,6 +3,7 @@
         <title><%= title %></title>
     </head>
     <body>
+        <a href="/new">Add a New Message</a>
         <ul>
             <% for (const message of messages) { %>
                 <%- include('messages/message', {message}); %>

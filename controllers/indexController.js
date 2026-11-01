@@ -18,3 +18,12 @@ export const getIndex = (req, res) => {
 export const getForm = (req, res) => {
     res.render("form");
 };
+
+export const postForm = (req, res) => {
+    const { text, user } = req.body;
+    if (!text.trim() || !user.trim()) {
+        return res.redirect("/new");
+    }
+    messages.push({ text: text.trim(), user: user.trim(), added: new Date() });
+    res.redirect("/");
+};
