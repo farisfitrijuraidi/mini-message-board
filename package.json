@@ -11,7 +11,11 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "node --env-file-if-exists=.env --watch app.js"
+  },
+  "engines": {
+    "node": ">=20.11.0"
   },
   "repository": {
     "type": "git",
