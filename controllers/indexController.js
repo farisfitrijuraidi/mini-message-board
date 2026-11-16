@@ -36,7 +36,7 @@ const createUserController = (database) => {
     };
 
     const getForm = (req, res) => {
-        res.render("form");
+        res.render("form", { title: "Create a New Message" });
     };
 
     const postForm = [
